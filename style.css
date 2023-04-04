@@ -1,0 +1,62 @@
+.menu{
+    width: 15vw;
+    height: 30vh;
+    margin: 0 auto;
+    margin-top: 30vh;
+}
+
+.menu ul{
+    background-image: linear-gradient(to bottom right, #D9173C, #660286);
+    border-radius: 20px;
+}
+
+.menu ul a{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul a li{
+    height: 5vh;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.menu ul li:hover{
+    background-color: #1ADAC3;
+}
+
+.list a{
+    color: white;
+    text-decoration: none;
+}
+
+.title{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.last{
+    margin-bottom: 20px;
+}
+
+body{
+    background-image: url("./Images/new-retro-arcade-neon-launch-8.jpg");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}

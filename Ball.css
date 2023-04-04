@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./Images/new-retro-arcade-neon-launch-8.jpg);
+}
+
+#ball {
+    background: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 35px;
+    height: 85px;
+    color: white;
+}
+
+
+#streak {
+    width: 200px;
+    font-size: 75px;
+    background-color: #1D1B21;
+    text-align: center;
+}
+
+#highscore {
+    width: 200px;
+    font-size: 75px;
+    background-color: #1D1B21;
+    text-align: center;
+}
+
+#timer {
+    width: 100px;
+    height: 100%;
+    font-size: 45px;
+    background-color: #1D1B21;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ball-container {
+    width: 80%;
+    height: 80%;
+    border: 5px black solid;
+    background-color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+}
+
+#return {
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.difficallity-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    margin-top: 20px;
+    background-color: red;
+    height: 50px;
+    width: 400px;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+.difficallity-container div{
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#easy{
+    background-color: #2AC28A;
+}
+
+#medium{
+    background-color: #F1B23E;
+}
+
+#hard{
+    background-color: #F15C3F;
+    transform: 0;
+}
+
+#easy:hover, #medium:hover, #hard:hover{
+    transform: scale(1.05);
+}
+
+#medium:hover{
+    z-index: 0;
+}
