@@ -14,7 +14,8 @@ body {
     border-radius: 100%;
     position: relative;
     top: 50%;
-    left: 50%;
+    left: 50%;    
+    transform: translate(-50%, -50%);
 }
 
 .container {
@@ -98,17 +99,52 @@ body {
 
 #medium{
     background-color: #F1B23E;
+    transform: scale(1.1);
 }
 
 #hard{
     background-color: #F15C3F;
-    transform: 0;
 }
 
 #easy:hover, #medium:hover, #hard:hover{
-    transform: scale(1.05);
+    border: 1px solid #1D1B21;
 }
 
-#medium:hover{
-    z-index: 0;
+.size-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    margin-top: 20px;
+    background-color: red;
+    height: 50px;
+    width: 400px;
+    position: absolute;
+    top: 50px;
+    right: 200px;
+}
+
+.size-container div{
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#large{
+    background-color: #2AC28A;
+}
+
+#midsize{
+    background-color: #F1B23E;
+    transform: scale(1.1);
+}
+
+#small{
+    background-color: #F15C3F;
+}
+
+#large:hover, #midsize:hover, #small:hover{
+    border: 1px solid #1D1B21;
 }
